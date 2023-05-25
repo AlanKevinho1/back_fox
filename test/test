@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "6c07122a-4836-4d3f-a6d7-17bf1d0a15cf",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27632134"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3333/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\":\"alvin\",\r\n    \"age\": 6,\r\n    \"description\": \"pequeno\",\r\n    \"vaccinated\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/foxes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"name\": \"alvaron\",\r\n        \"age\": 12,\r\n        \"description\": \"grande\",\r\n        \"vaccinated\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/foxes/alvin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"foxes",
+						"alvin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/foxes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/foxes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"foxes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/foxes/alvin",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/foxes/alvin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"foxes",
+						"alvin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
